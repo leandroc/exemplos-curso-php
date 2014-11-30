@@ -1,4 +1,4 @@
-Exemplos comeplementares - Cursos de PHP
+Exemplos comeplementares / PHP
 ==================
 
 Este repositório contém exemplo complementares de código, produzidos em sala de aula com os alunos dos cursos de PHP. 
