@@ -7,7 +7,7 @@ class ContatoDAO {
 		$this->conexao = $conexao;
 	}
 
-	public function cadatrar(ContatoVO $contato){
+	public function cadastrar(ContatoVO $contato){
 		$nome = $contato->getNome();
 		$dataCadastro = $contato->getDataCadastro();
 		$query = "INSERT INTO contato (nome, dataCadastro)

@@ -13,5 +13,5 @@ $contato->setDataCadastro();
 $contato = new ContatoVO();
 
 //Utiliando o método cadastrar do DAO
-$id = $dao->cadatrar($contato);
+$id = $dao->cadastrar($contato);
 var_dump($id);
