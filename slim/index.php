@@ -1,7 +1,9 @@
 <?php
-require 'exemplos-curso-php/slim/Slim.php';
+require 'Slim/Slim.php';
 \Slim\Slim::registerAutoloader ();
 $app = new \Slim\Slim ();
+
+
 
 //Exemplo: http://localhost/exemplos-curso-php/slim/books/1
 $app->get('/books/', function () {
