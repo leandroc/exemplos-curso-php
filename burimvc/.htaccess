@@ -3,7 +3,7 @@
 #Pagina de erros
 #ErrorDocument 404 /404.php
 
-#Trata os indices
+#Trata os índices
 IndexIgnore *
 Options -Indexes
 

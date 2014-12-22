@@ -1,7 +1,6 @@
 <?php
 abstract class FrontController
 {
-	public $view_file;
 	abstract public function index();
 	
 	public function showView($view,$params = array())

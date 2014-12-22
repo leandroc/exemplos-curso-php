@@ -1,4 +1,4 @@
-<form action="">
+<form action="<?php echo URL_RAIZ; ?>contato/salvar">
     <h4>Já sou cadastrado</h4>
 
     <div class="form-group">
@@ -20,15 +20,3 @@
         </div>
     </div>
 </form>
-
-
-<!DOCTYPE HTML>
-<html>
-<head>
-	<title>Uma página qualquer</title>
-</head>
-<body>
-
-</form>
-</body>
-</html>

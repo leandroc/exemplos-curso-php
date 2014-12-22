@@ -19,7 +19,6 @@ class ContatoController extends FrontController
 		$contato = new ContatoVO();
 		$contato->setNome("Eder Franco");
 		$contato->setDataCadastro();
-		$contato = new ContatoVO();
 		
 		//Utiliando o método cadastrar do DAO
 		$id = $dao->cadastrar($contato);
@@ -29,6 +28,44 @@ class ContatoController extends FrontController
 		//var_dump($id);
 		
 		
+	}
+	
+	public function salvarRest()
+	{
+		//Aqui eu posso criar uma lógica bacana para salvar no banco
+		//Instanciando o DAO
+		$conexao = Conexao::getInstance()->getConexao();
+		$dao = new ContatoDAO($conexao);
+	
+		//Criando nosso objeto contato.
+		$contato = new ContatoVO();
+		$contato->setNome("Eder Franco");
+		$contato->setDataCadastro();
+	
+		//Utiliando o método cadastrar do DAO
+		$id = $dao->cadastrar($contato);
+// 		$params["id"] = $id;
+// 		$view = VIEW_PATH.'sucesso.php';
+// 		$this->showView($view,$params);
+// 		//var_dump($id);
+		echo json_encode($id);
+		exit;
+	
+	
+	}
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	public function buscarPorEmail()
+	{
+		echo 'veio';
 	}
 	
 }

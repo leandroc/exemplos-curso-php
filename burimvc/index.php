@@ -1,13 +1,15 @@
 <?php
 //Este arquivo atual como FronController.
+//var_dump($_GET);
 
 //O bootstrap carrega e inicializa tudo o que precisamos
 require 'bootstrap.php';
 
 //Isso aqui poderia ser otimizado e se tornar um método do FronController
+$requisicao = array();
 if(!isset($_GET["param"])){
-	$requisicao[0] = 'home';
-	$requisicao[1] = 'index';
+	$requisicao[0] = 'home';//Nome do Controller
+	$requisicao[1] = 'index';//Nome do métodos
 } else {
 	$requisicao = explode("/",$_GET["param"]);
 	if(!isset($requisicao[1])){
@@ -16,6 +18,7 @@ if(!isset($_GET["param"])){
 		$requisicao[1] = 'index';
 	}
 }
+// var_dump($requisicao);
 
 //Pega o nome do controller para carregar
 $nomeController = ucfirst($requisicao[0]);

@@ -6,6 +6,10 @@ class HomeController extends FrontController
 	{
 		//Aqui vai qualquer coisa que precise ser feita antes da view ser mostrada
 		$view = VIEW_PATH.'home.php';
+		
+		
+		
+		
 		$this->showView($view);
 	}
 	
