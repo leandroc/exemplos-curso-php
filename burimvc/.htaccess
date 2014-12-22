@@ -1,0 +1,27 @@
+#Referencia: http://www.htaccessredirect.net/
+
+#Pagina de erros
+#ErrorDocument 404 /404.php
+
+#Trata os indices
+IndexIgnore *
+Options -Indexes
+
+#Redirecionamentos
+RewriteEngine On
+
+#Nao aplica a condicao para arquivos
+RewriteCond %{SCRIPT_FILENAME} !-f
+
+#Na aplica a condiao para diretorios
+RewriteCond %{SCRIPT_FILENAME} !-d
+
+#Redireciona para index.php, e transforma qualquer coisa que vir na URL no parametro de URL "pg"
+RewriteRule ^(.*)$ index.php?param=$1
+
+ 
+
+
+
+
+
